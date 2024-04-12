@@ -1,0 +1,56 @@
+[
+    {
+        "label": "menu",
+        "kind": 5,
+        "importPath": "sistema_bancario_v1",
+        "description": "sistema_bancario_v1",
+        "peekOfCode": "menu = '''\n[d] Depositar\n[s] Sacar\n[e] Extrato\n[q] sair\n=>'''\nsaldo = 0\nlimite = 500\nextrato = \"\"\nnumero_saques = 0",
+        "detail": "sistema_bancario_v1",
+        "documentation": {}
+    },
+    {
+        "label": "saldo",
+        "kind": 5,
+        "importPath": "sistema_bancario_v1",
+        "description": "sistema_bancario_v1",
+        "peekOfCode": "saldo = 0\nlimite = 500\nextrato = \"\"\nnumero_saques = 0\nLIMITE_SAQUES = 3\nwhile True:\n    opcao = input(menu)\n   # Opção de depósito\n    if opcao == \"d\":\n        valor = float(input(\"Informe o valor do depósito: \"))",
+        "detail": "sistema_bancario_v1",
+        "documentation": {}
+    },
+    {
+        "label": "limite",
+        "kind": 5,
+        "importPath": "sistema_bancario_v1",
+        "description": "sistema_bancario_v1",
+        "peekOfCode": "limite = 500\nextrato = \"\"\nnumero_saques = 0\nLIMITE_SAQUES = 3\nwhile True:\n    opcao = input(menu)\n   # Opção de depósito\n    if opcao == \"d\":\n        valor = float(input(\"Informe o valor do depósito: \"))\n        if valor > 0:",
+        "detail": "sistema_bancario_v1",
+        "documentation": {}
+    },
+    {
+        "label": "extrato",
+        "kind": 5,
+        "importPath": "sistema_bancario_v1",
+        "description": "sistema_bancario_v1",
+        "peekOfCode": "extrato = \"\"\nnumero_saques = 0\nLIMITE_SAQUES = 3\nwhile True:\n    opcao = input(menu)\n   # Opção de depósito\n    if opcao == \"d\":\n        valor = float(input(\"Informe o valor do depósito: \"))\n        if valor > 0:\n            saldo += valor",
+        "detail": "sistema_bancario_v1",
+        "documentation": {}
+    },
+    {
+        "label": "numero_saques",
+        "kind": 5,
+        "importPath": "sistema_bancario_v1",
+        "description": "sistema_bancario_v1",
+        "peekOfCode": "numero_saques = 0\nLIMITE_SAQUES = 3\nwhile True:\n    opcao = input(menu)\n   # Opção de depósito\n    if opcao == \"d\":\n        valor = float(input(\"Informe o valor do depósito: \"))\n        if valor > 0:\n            saldo += valor\n            extrato += f\"depósito: R$ {valor:.2f}\\n\"",
+        "detail": "sistema_bancario_v1",
+        "documentation": {}
+    },
+    {
+        "label": "LIMITE_SAQUES",
+        "kind": 5,
+        "importPath": "sistema_bancario_v1",
+        "description": "sistema_bancario_v1",
+        "peekOfCode": "LIMITE_SAQUES = 3\nwhile True:\n    opcao = input(menu)\n   # Opção de depósito\n    if opcao == \"d\":\n        valor = float(input(\"Informe o valor do depósito: \"))\n        if valor > 0:\n            saldo += valor\n            extrato += f\"depósito: R$ {valor:.2f}\\n\"\n        else:",
+        "detail": "sistema_bancario_v1",
+        "documentation": {}
+    }
+]
